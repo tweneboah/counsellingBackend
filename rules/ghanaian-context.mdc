@@ -1,0 +1,94 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Ghanaian University Context & Cultural Considerations
+
+## Target Audience
+This platform is specifically designed for Ghanaian university students and addresses unique challenges in the Ghanaian higher education mental health landscape.
+
+## Cultural Sensitivity Guidelines
+### Language and Communication
+- **Multi-language Support**: Implement robust support for English, Twi, Ewe, and Hausa
+- **Cultural Context**: Understand and respect Ghanaian cultural values in counseling approaches
+- **Communication Styles**: Adapt AI responses to be culturally appropriate and respectful
+- **Religious Considerations**: Be sensitive to strong religious beliefs prevalent in Ghana
+
+### Stigma Reduction Strategies
+- **Privacy First**: Emphasize anonymity and confidentiality to reduce counseling stigma
+- **Gentle Onboarding**: Create non-threatening introduction to counseling services
+- **Peer Normalization**: Show that seeking help is normal and encouraged
+- **Success Stories**: Share positive outcomes while maintaining privacy
+
+## University Campus Challenges
+### Infrastructure Limitations
+- **Internet Connectivity**: Design for intermittent or slow internet connections
+- **Mobile-First Design**: Many students primarily use mobile devices
+- **Data Conservation**: Optimize for low data usage scenarios
+- **Offline Capabilities**: Consider offline features for critical functionality
+
+### Academic Integration
+- **Academic Calendar**: Align features with Ghanaian academic calendar
+- **Exam Periods**: Provide enhanced support during high-stress exam periods
+- **Semester Breaks**: Adapt services for vacation periods
+- **Academic Year Structure**: Consider the unique structure of Ghanaian universities
+
+### Student Life Considerations
+- **Financial Stress**: Address common financial challenges faced by students
+- **Family Expectations**: Understand pressure from family and societal expectations
+- **Career Anxiety**: Provide support for post-graduation concerns
+- **Accommodation Issues**: Address campus housing and off-campus living challenges
+
+## Common Mental Health Issues in Ghana
+### Prevalent Concerns
+- **Academic Stress**: High pressure to succeed academically
+- **Family Pressure**: Expectations from extended family networks
+- **Financial Worries**: Concerns about school fees and living expenses
+- **Identity Issues**: Balancing traditional values with modern education
+- **Relationship Challenges**: Navigating romantic and friendship relationships
+
+### Crisis Indicators Specific to Ghana
+- **Family Shame**: Fear of bringing shame to family name
+- **Religious Conflict**: Struggles between religious beliefs and personal challenges
+- **Cultural Identity**: Conflicts between traditional and modern values
+- **Economic Pressure**: Stress from financial responsibilities to family
+
+## Localization Features
+### User Interface Adaptations
+- **Currency Display**: Use Ghana Cedis (GHS) for any financial references
+- **Date Formats**: Use DD/MM/YYYY format common in Ghana
+- **Time Zones**: GMT (Ghana Mean Time) as default
+- **Contact Formats**: Ghana phone number formats and validation
+
+### Content Localization
+- **Local Examples**: Use examples relevant to Ghanaian students
+- **Cultural References**: Include appropriate cultural and social references
+- **Educational System**: Reference the Ghanaian educational system structure
+- **Local Resources**: Connect students with local mental health resources
+
+## Integration with Ghanaian Higher Education
+### University Partnerships
+- **Student ID Integration**: Support various Ghanaian university ID formats
+- **Academic Records**: Consider integration with student information systems
+- **Campus Services**: Link with existing campus counseling services
+- **Institutional Reporting**: Provide aggregated (anonymous) reports to universities
+
+### Regulatory Compliance
+- **Data Protection**: Comply with Ghana's data protection regulations
+- **Educational Standards**: Align with Ghana Education Service guidelines
+- **Healthcare Regulations**: Follow Ghana Health Service mental health guidelines
+- **University Policies**: Integrate with existing university counseling policies
+
+## Community and Social Features
+### Peer Support Networks
+- **Anonymous Groups**: Create safe spaces for peer interaction
+- **Study Groups**: Mental health support integrated with academic support
+- **Campus Events**: Integration with campus mental health awareness events
+- **Mentorship Programs**: Connect students with peer mentors
+
+### Family and Community Integration
+- **Family Education**: Resources to help families understand mental health
+- **Community Outreach**: Connect with local community mental health resources
+- **Religious Integration**: Respectful integration with religious support systems
+- **Traditional Healing**: Acknowledge and respect traditional healing practices

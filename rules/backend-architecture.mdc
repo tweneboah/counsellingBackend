@@ -1,0 +1,69 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Backend Architecture Guidelines
+
+## Directory Structure
+The backend follows a clean, modular architecture:
+
+```
+backend/src/
+├── server.js              # Main entry point
+├── config/                # Database and environment configuration
+├── models/                # Mongoose data models
+├── controllers/           # Route handlers and business logic
+├── routes/                # API endpoint definitions
+├── middleware/            # Custom middleware (auth, validation, etc.)
+├── services/              # External service integrations (Gemini AI, email)
+└── utils/                 # Utility functions and helpers
+```
+
+## Core Dependencies
+Key packages used in the backend:
+- **Express.js**: Web framework for API development
+- **Mongoose**: MongoDB ODM for data modeling
+- **@google/generative-ai**: Google Gemini API integration
+- **jsonwebtoken**: JWT authentication
+- **bcrypt**: Password hashing
+- **helmet**: Security middleware
+- **cors**: Cross-origin resource sharing
+- **winston**: Logging framework
+- **express-rate-limit**: API rate limiting
+
+## Data Models
+The application manages two primary user types:
+
+### Student (Counsellee) Model
+Required fields include:
+- Full Name, Student ID, Email, Phone, Password
+- Age, Date of Birth, Gender, Marital Status
+- Academic: Level/Class, Programme of Study
+- Residential Status, Preferred Language
+- Reason for Seeking Counseling, Emergency Contact
+- Previous Counseling History, Consent Status
+- Profile Picture (optional), Registration/Update dates
+
+### Counselor (Admin/Staff) Model
+Required fields include:
+- Full Name, Staff ID, Email, Phone, Password
+- Gender, Department/Unit, Role, Permissions
+- Profile Picture (optional), Last Login, Account dates
+
+## API Design Principles
+- **RESTful endpoints**: Follow standard HTTP methods and status codes
+- **JWT Authentication**: Secure token-based authentication
+- **Role-based Access**: Different permissions for students vs counselors
+- **Rate Limiting**: Protect against abuse and ensure fair usage
+- **Input Validation**: Validate all incoming data using proper schemas
+- **Error Handling**: Consistent error responses with appropriate status codes
+- **Logging**: Comprehensive logging for debugging and monitoring
+
+## Security Considerations
+- Password hashing with bcrypt
+- JWT token expiration and refresh
+- Input sanitization and validation
+- CORS configuration for frontend integration
+- Helmet for security headers
+- Rate limiting to prevent abuse

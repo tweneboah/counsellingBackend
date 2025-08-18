@@ -1,0 +1,98 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Development Standards & Best Practices
+
+## Code Style and Quality
+### General Guidelines
+- **Consistent Naming**: Use descriptive, meaningful names for variables and functions
+- **Clean Code**: Write self-documenting code with minimal but necessary comments
+- **Error Handling**: Implement comprehensive error handling throughout the application
+- **Logging**: Use winston for backend logging with appropriate log levels
+
+### Backend Standards (Node.js/Express)
+- **ES6+ Features**: Use modern JavaScript syntax (async/await, destructuring, arrow functions)
+- **Middleware Pattern**: Create reusable middleware for common functionality
+- **Controller Structure**: Keep controllers thin, move business logic to services
+- **Environment Variables**: Store all configuration in environment variables
+- **Database Queries**: Use Mongoose properly with schema validation
+
+### Frontend Standards (React)
+- **Functional Components**: Use React hooks instead of class components
+- **Custom Hooks**: Extract reusable logic into custom hooks
+- **Component Composition**: Prefer composition over inheritance
+- **State Management**: Use appropriate state management (local vs context vs external)
+- **Event Handlers**: Use proper event handling patterns
+
+## Testing Strategy
+### Backend Testing
+- **Unit Tests**: Test individual functions and modules
+- **Integration Tests**: Test API endpoints and database interactions
+- **Authentication Tests**: Verify JWT and role-based access control
+- **AI Service Tests**: Mock Gemini API responses for consistent testing
+
+### Frontend Testing
+- **Component Tests**: Test React components in isolation
+- **User Interaction Tests**: Test form submissions and user flows
+- **API Integration Tests**: Test frontend-backend communication
+- **Accessibility Tests**: Ensure proper ARIA labels and keyboard navigation
+
+## Security Best Practices
+### Authentication & Authorization
+- **JWT Best Practices**: Proper token expiration and refresh mechanisms
+- **Password Security**: Use bcrypt with proper salt rounds
+- **Role-Based Access**: Implement granular permissions for different user types
+- **Session Management**: Secure session handling with proper logout
+
+### Data Protection
+- **Input Validation**: Validate all user inputs on both client and server
+- **SQL Injection Prevention**: Use parameterized queries with Mongoose
+- **XSS Prevention**: Sanitize user-generated content
+- **HTTPS Only**: Enforce secure connections in production
+
+### Privacy Considerations
+- **Data Minimization**: Collect only necessary student information
+- **Consent Management**: Implement clear consent mechanisms
+- **Data Retention**: Define and implement data retention policies
+- **Anonymization**: Provide options for anonymous counseling sessions
+
+## Performance Guidelines
+### Backend Performance
+- **Database Optimization**: Use proper indexing and query optimization
+- **Caching Strategy**: Implement caching for frequently accessed data
+- **Rate Limiting**: Protect against abuse with appropriate rate limits
+- **API Response Time**: Monitor and optimize API response times
+
+### Frontend Performance
+- **Code Splitting**: Use React lazy loading for route-based code splitting
+- **Image Optimization**: Optimize images for web delivery
+- **Bundle Size**: Monitor and minimize JavaScript bundle size
+- **Lighthouse Scores**: Maintain good performance, accessibility, and SEO scores
+
+## Deployment and DevOps
+### Environment Management
+- **Environment Separation**: Maintain separate dev, staging, and production environments
+- **Configuration Management**: Use environment-specific configuration files
+- **Secret Management**: Securely manage API keys and sensitive data
+- **Database Migrations**: Use proper database migration strategies
+
+### Monitoring and Logging
+- **Application Monitoring**: Monitor application health and performance
+- **Error Tracking**: Implement error tracking and alerting
+- **Audit Logging**: Log important user actions and system events
+- **Performance Metrics**: Track key performance indicators
+
+## Documentation Standards
+### Code Documentation
+- **API Documentation**: Document all API endpoints with examples
+- **Function Documentation**: Document complex functions with JSDoc
+- **README Files**: Maintain clear setup and usage instructions
+- **Architecture Documentation**: Document system architecture and design decisions
+
+### User Documentation
+- **User Guides**: Create guides for students and counselors
+- **Setup Instructions**: Provide clear installation and configuration steps
+- **Troubleshooting**: Document common issues and solutions
+- **Feature Documentation**: Document new features as they are added

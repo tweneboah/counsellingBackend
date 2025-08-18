@@ -1,0 +1,30 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Counselling Platform Project Guidelines
+
+## Project Mission
+Develop an AI-powered virtual counseling platform for Ghanaian university students that addresses mental health infrastructure gaps while maintaining cultural sensitivity and privacy.
+
+## Development Priorities
+1. **Student Privacy**: Implement robust privacy protection and anonymous counseling options
+2. **Cultural Sensitivity**: Ensure all features respect Ghanaian cultural values and norms
+3. **Accessibility**: Design for low-bandwidth environments and mobile-first usage
+4. **Crisis Detection**: Build reliable systems to identify students needing immediate help
+5. **AI Quality**: Ensure AI responses are helpful, appropriate, and culturally aware
+
+## Key Technical Focus Areas
+- **Multi-language Support**: English, Twi, Ewe, and Hausa language integration
+- **Mobile Optimization**: Responsive design for smartphone-first users
+- **Offline Capabilities**: Essential features available without internet connection
+- **Data Security**: End-to-end encryption for all counseling conversations
+- **Scalability**: Design to serve multiple Ghanaian universities
+
+## Quality Assurance
+- Test with real Ghanaian university scenarios
+- Validate AI responses for cultural appropriateness
+- Ensure accessibility compliance for diverse user needs
+- Verify performance on low-end mobile devices
+- Test multilingual functionality thoroughly

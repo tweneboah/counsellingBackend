@@ -1,0 +1,80 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# AI Integration & Counseling Features
+
+## Google Gemini AI Integration
+The platform uses Google Gemini API for AI-powered counseling capabilities.
+
+### AI Service Architecture
+- **Service Layer**: Centralized AI service in [backend/src/services/](mdc:backend/src/services)
+- **Conversation Management**: Maintain context across counseling sessions
+- **Crisis Detection**: Monitor conversation patterns for risk indicators
+- **Multi-language Support**: Handle conversations in English, Twi, Ewe, and Hausa
+
+### AI Counseling Features
+#### Core Capabilities
+- **24/7 Availability**: Always-on support for students
+- **Contextual Responses**: Maintain conversation history and context
+- **Topic Guidance**: Suggested topics (stress, exams, relationships, career)
+- **Mood Analysis**: Assess emotional state from conversation patterns
+- **Escalation Triggers**: Detect when human counselor intervention is needed
+
+#### Crisis Detection Algorithms
+- **Keyword Monitoring**: Flag dangerous terms or expressions
+- **Sentiment Analysis**: Track emotional patterns over time
+- **Frequency Analysis**: Monitor usage patterns for concerning behavior
+- **Risk Scoring**: Assign risk levels to student conversations
+
+### Conversation Management
+#### Chat History
+- Store conversation history for continuity
+- Maintain privacy and confidentiality
+- Enable counselor review when authorized
+- Support data export for analysis
+
+#### Session Management
+- Track session duration and frequency
+- Implement conversation flow management
+- Support conversation branching based on topics
+- Maintain user context across sessions
+
+### Multi-language Support
+#### Language Detection
+- Automatic language detection from user input
+- Seamless switching between languages within conversations
+- Cultural context awareness for Ghanaian students
+
+#### Supported Languages
+- **English**: Primary language for formal interactions
+- **Twi**: Most widely spoken Ghanaian language
+- **Ewe**: Southern Ghana language support
+- **Hausa**: Northern Ghana language support
+
+### Privacy and Ethics
+#### Data Protection
+- Encrypt all conversation data
+- Implement data retention policies
+- Ensure GDPR compliance for student privacy
+- Secure API key management for Gemini integration
+
+#### Ethical Guidelines
+- Maintain professional counseling standards
+- Avoid providing medical advice
+- Clear disclaimers about AI limitations
+- Encourage human counselor consultation for serious issues
+
+### Integration Patterns
+#### API Communication
+- Secure API calls to Google Gemini
+- Error handling for API failures
+- Fallback responses when AI is unavailable
+- Rate limiting to manage API costs
+
+#### Response Processing
+- Clean and format AI responses
+- Filter inappropriate content
+- Add context-appropriate disclaimers
+- Log interactions for quality improvement

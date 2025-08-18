@@ -1,0 +1,24 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Global Development Guidelines
+
+## Code Quality Standards
+- Write clean, maintainable, and well-documented code
+- Follow consistent naming conventions across all files
+- Implement comprehensive error handling and logging
+- Use TypeScript or JSDoc for better code documentation
+
+## Security First
+- Always validate user inputs on both client and server sides
+- Implement proper authentication and authorization
+- Use environment variables for all sensitive configuration
+- Follow OWASP security guidelines for web applications
+
+## Performance Optimization
+- Optimize for mobile devices and slow internet connections
+- Implement proper caching strategies
+- Monitor and optimize bundle sizes and load times
+- Use lazy loading and code splitting where appropriate

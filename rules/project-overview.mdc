@@ -1,0 +1,37 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Counselling Platform Project Overview
+
+## Project Purpose
+This is an AI-powered virtual counseling platform specifically designed for Ghanaian university campuses. The platform addresses critical mental health infrastructure gaps by providing 24/7 AI counseling support while maintaining the ability to escalate to human counselors when needed.
+
+## Key Problems Solved
+- **Limited Access**: Most universities have few trained counselors serving thousands of students
+- **Stigma Reduction**: Provides privacy and anonymity to reduce barriers to seeking help
+- **Language Barriers**: Supports multiple languages (English, Twi, Ewe, Hausa)
+- **Crisis Detection**: Flags students at risk through mood analysis and keyword detection
+- **Resource Optimization**: AI handles minor issues, saving counselors time for serious cases
+- **Data Management**: Provides centralized, secure, and searchable counseling records
+
+## Architecture
+The project follows a full-stack architecture:
+- **Backend**: Express.js API with MongoDB (Mongoose) - [backend/](mdc:backend)
+- **Frontend**: React.js with Vite and TailwindCSS - [frontend/](mdc:frontend)
+- **AI Integration**: Google Gemini API for AI counseling capabilities
+- **Authentication**: JWT-based authentication system
+
+## Main Entry Points
+- Backend server: [backend/src/server.js](mdc:backend/src/server.js)
+- Frontend application: [frontend/src/main.jsx](mdc:frontend/src/main.jsx)
+- Frontend main component: [frontend/src/App.jsx](mdc:frontend/src/App.jsx)
+
+## User Flow
+1. **Landing Page**: Introduction to the AI-powered counselor platform
+2. **Authentication**: Student sign-up/login with university credentials
+3. **Onboarding**: Consent forms, reason selection, language preference
+4. **AI Dashboard**: Chatbot interface, mood check-ins, journaling, human counselor requests
+5. **Admin Panel**: Counselor dashboard for student monitoring and appointment booking
+6. **Settings**: Role-based access, language switching, data export

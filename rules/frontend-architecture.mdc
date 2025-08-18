@@ -1,0 +1,79 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# Frontend Architecture Guidelines
+
+## Directory Structure
+The frontend follows React best practices with a component-based architecture:
+
+```
+frontend/src/
+├── main.jsx               # React application entry point
+├── App.jsx                # Main application component
+├── components/            # Reusable UI components
+├── pages/                 # Page-level components for routing
+├── contexts/              # React Context for state management
+├── services/              # API calls and external service integrations
+├── utils/                 # Utility functions and helpers
+├── assets/                # Static assets (images, icons, etc.)
+├── App.css                # Component-specific styles
+├── index.css              # Global styles
+└── styles.css             # Additional styling
+```
+
+## Core Dependencies
+Key packages used in the frontend:
+- **React 19**: Latest React with concurrent features
+- **React Router DOM**: Client-side routing
+- **TailwindCSS**: Utility-first CSS framework
+- **Framer Motion**: Animation library for smooth interactions
+- **React Hook Form**: Form handling with validation
+- **Yup**: Schema validation for forms
+- **Axios**: HTTP client for API calls
+- **React Icons**: Icon library for UI elements
+- **Date-fns**: Date manipulation utilities
+
+## Component Architecture
+- **Pages**: Top-level route components representing different screens
+- **Components**: Reusable UI components (buttons, forms, modals, etc.)
+- **Contexts**: Global state management for authentication, user data, etc.
+- **Services**: API integration layer for backend communication
+
+## Styling Guidelines
+- **TailwindCSS**: Primary styling solution for consistent design
+- **Responsive Design**: Mobile-first approach for Ghanaian university students
+- **Modern UI**: Clean, accessible interface reducing stigma around counseling
+- **Framer Motion**: Smooth animations to enhance user experience
+
+## Key Features to Implement
+### Student Interface
+- Landing page with platform introduction
+- Authentication (sign-up/login) with university credentials
+- Onboarding flow (consent, preferences, reason selection)
+- AI Chatbot interface for 24/7 counseling support
+- Mood check-ins and journaling features
+- Request human counselor follow-up option
+- Multi-language support (English, Twi, Ewe, Hausa)
+
+### Counselor/Admin Interface
+- Secure admin dashboard
+- Student list and chat history management
+- Crisis detection alerts and red-flagged users
+- Appointment booking system
+- Analytics and reporting features
+- Role-based access control
+
+## State Management
+- **React Context**: Global state for authentication and user data
+- **Local State**: Component-level state using useState and useReducer
+- **Form State**: React Hook Form for complex form handling
+- **API State**: Axios with proper error handling and loading states
+
+## Development Guidelines
+- **Component Naming**: Use PascalCase for components
+- **File Organization**: Group related components in folders
+- **Props Validation**: Use PropTypes or TypeScript for type safety
+- **Accessibility**: Ensure ARIA labels and keyboard navigation
+- **Performance**: Use React.memo and useMemo for optimization
