@@ -310,14 +310,6 @@ exports.login = async (req, res) => {
     } else if (userType === "counselor") {
       user = counselorUser;
       role = user ? user.role : "counselor";
-      
-      // Prevent admins from logging in as counselors
-      if (user && user.role === "admin") {
-        return res.status(401).json({
-          status: "fail",
-          message: "Admin accounts cannot login through the counselor portal. Please use the admin login interface or contact system administrator.",
-        });
-      }
     }
 
     // Check if user exists and password is correct
